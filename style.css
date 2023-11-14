@@ -1,0 +1,119 @@
+:root {
+  --main-color: #030393;
+}
+
+.border {
+  border: solid 1px #000;
+}
+
+/* #no-border {
+  border: none;
+} */
+
+.test {
+  text-align: center;
+  font-variant: small-caps;
+  text-decoration: underline;
+  line-height: 40px;
+}
+
+h1 {
+  font: italic bold 24px Arial, sans-serif;
+}
+
+.bord {
+  padding: 10px 100px;
+  border: dotted 3px #000;
+  border-radius: 15px;
+  background-color: yellowgreen;
+  width: 500px;
+  height: 90px;
+}
+
+@media (max-width: 720px) {
+  .bord {
+    width: 300px;
+    background-color: yellow;
+  }
+}
+
+@media (orientation: portrait) {
+  .bord {
+    color: rgb(165, 94, 1);
+  }
+}
+
+.box {
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  padding: 30px;
+  background-color: yellow;
+  box-sizing: border-box;
+  display: inline-block;
+  position: static;
+  top: 40px;
+}
+
+.flex {
+  display: flex;
+  border: solid 3px red;
+  width: 40%;
+  height: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  padding: 10px;
+}
+
+.flex-item-2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(29, 95, 27);
+  padding: 10px;
+  flex-grow: 1;
+}
+.flex-item-3 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(170, 180, 170);
+  padding: 10px;
+  flex-grow: 0.33;
+}
+.flex-item-4 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(8, 235, 0);
+  padding: 10px;
+  flex-shrink: 1;
+}
+
+.key {
+  font-size: 50px;
+  margin: 40px;
+  animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: blue;
+  }
+}
+
+h1 {
+  color: var(--main-color);
+}
