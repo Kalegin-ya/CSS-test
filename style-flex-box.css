@@ -2,10 +2,10 @@
   border: solid 3px yellow;
   height: 200px;
   /* display: flex; */
-  flex-direction: row;
-  flex-wrap: no-wrap;
+  /* flex-direction: row; */
+  /* flex-wrap: no-wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   /* align-content: center; для многострочного */
 }
 
@@ -32,16 +32,19 @@
   /* background-clip: padding-box; */
   /* outline: solid 5px yellow;
   outline-offset: 5px; */
+  float: left;
 }
 .flex-item-2 {
   background-color: blue;
   margin: 5px 5px;
   /* flex-grow: 1; */
+  float: right;
 }
 .flex-item-3 {
   background-color: brown;
   /* flex-grow: 1;
   flex-shrink: 0; */
+  float: left;
 }
 .flex-item-4 {
   background-color: brown;
